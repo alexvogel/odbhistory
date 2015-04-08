@@ -1,7 +1,7 @@
 import sys
 import os
-odbhistory_version = "0.03"
-odbhistory_date = "Mar 27 2012"
+odbhistory_version = "[% version %]"
+odbhistory_date = "[% date %]"
 
 # 0.01    09.02.2012    Erste Version bei BMW
 # 0.02    10.02.2012    Dev. Korrekturen bei postfunctions
@@ -17,7 +17,7 @@ from history import *
 
 # Definieren der Kommandozeilenparameter
 parser = argparse.ArgumentParser(description='a tool for obtaining information (history output) from an abaqus output database file (odb).',
-                                 epilog='author: alexander.vogel@caegroup.de | version: '+odbhistory_version+' | date: '+odbhistory_date)
+                                 epilog='author: alexander.vogel@prozesskraft.de | version: '+odbhistory_version+' | date: '+odbhistory_date)
 parser.add_argument('--odb', metavar='ODBFILE', type=str, required=True,
                    help='abaqus output database file')
 parser.add_argument('--stepname', metavar='STEPNAME', action='store',
