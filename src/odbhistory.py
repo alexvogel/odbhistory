@@ -3,7 +3,7 @@ import os
 odbhistory_version = "[% version %]"
 odbhistory_date = "[% date %]"
 
-# 0.01    09.02.2012    Erste Version bei BMW
+# 0.01    09.02.2012    Erste Version
 # 0.02    10.02.2012    Dev. Korrekturen bei postfunctions
 # 0.03    27.03.2012    Wenn ein ";" in historyRegion oder historyOutput vorkommt, wird der Namen in Anfuehrungszeichen eingeschlossen
 
